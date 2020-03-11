@@ -1,0 +1,13 @@
+log/
+# exclude everything
+downloads/*
+
+# exception to the rule
+!downloads/.gitkeep
+
+# exclude everything
+/uploads
+
+# exception to the rule
+!uploads/.gitkeep
+
