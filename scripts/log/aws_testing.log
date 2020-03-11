@@ -1,3 +1,0 @@
-2020-03-10 16:53:20 ERROR aws_testing.py 60 main [31mFailed to upload android-chrome-512x512.png to vmoksha-ali/s3_file_name: An error occurred (AccessDenied) when calling the PutObject operation: Access Denied[0m
-2020-03-10 18:19:44 ERROR aws_testing.py 62 main [31mAn error occurred (AccessDenied) when calling the ListBuckets operation: Access Denied[0m
-2020-03-11 09:57:09 ERROR aws_testing.py 63 main [31m's3.ServiceResource' object has no attribute 'list_buckets'[0m

@@ -1,0 +1,17 @@
+/log/
+g/
+__pycache__/
+# exclude everything
+downloads/*
+
+# exception to the rule
+!downloads/.gitkeep
+
+# exclude everything
+/uploads/*
+
+# exception to the rule
+!uploads/.gitkeep  
+
+pdf_split_pages/*
+!pdf_split_pages/.gitkeep
