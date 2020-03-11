@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>
+            Success upload
+        </title>
+        <style>
+            h1 {
+                color: blue;
+            }
+            
+            div#container_div{
+                position: relative;
+                top:20px;
+                left:35%;
+            }
+            
+            div#loading_img{
+                position: relative;
+                top:10px;
+                left:35%;
+            }
+            div#success_msg{
+                position: relative;
+                top:16px;
+                left:35%;
+                color:blue;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="container_div">
+            <h1>Upload image file to s3</h1>
+            <form action="/upload_img" method="post" enctype = "multipart/form-data">
+                <label for="file">Upload image:</label>
+                <input type="file" id="file" name="file">
+                <input type="submit" id="submit" onclick="$('#loading_img').show();">
+            </form>
+        </div>
+        
+        <div id="success_msg">
+            <p>
+                *Image successfully uploaded to AWS S3. click <a href={{image_url}}>{{image_url}}</a>
+            </p>
+        </div>
+        <div id="loading_img" style="display:none;">
+            <img src="/static/Spinner-Preloader.gif" width="500"/>
+        </div>
+    </body>
+</html>
