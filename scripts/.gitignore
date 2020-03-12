@@ -1,3 +1,4 @@
+#Exclude log folder
 log/
 # exclude everything
 downloads/*
@@ -6,8 +7,11 @@ downloads/*
 !downloads/.gitkeep
 
 # exclude everything
-uploads/
+uploads/*.jpg
+uploads/*.png
 
 # exception to the rule
 !uploads/.gitkeep
+
+credential.config
 
